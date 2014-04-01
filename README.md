@@ -11,3 +11,5 @@ I currently teach four courses (as of April 2014):
 3. [Improving HTML/CSS Development Workflows](http://davearthurweb.com/courses/html-css-workflows) 
 4. [HTML5 and Web Applications](http://davearthurweb.com/courses/html5/)
 
+
+
