@@ -1,0 +1,65 @@
+.main-header {
+	color: #fff;
+	width: 100%;
+	-moz-box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+	
+}
+
+.masthead {
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
+}
+
+.main-title {
+	margin: 0;
+	font-size: -da-convt-root-ems(24px);
+	text-align: center;
+	
+	> a {
+		color: #fff;
+		padding: -da-convt-root-ems(12px) 2.5%;
+		background-color: rgb(241, 90, 34);
+		background-color: rgba(241, 90, 34, 0.98);
+		
+		white-space: nowrap;
+		display: block;
+	}
+	
+	> a:hover {
+		text-decoration: none;
+	}
+}
+
+.css3 .main-title, .html5 .main-title {
+	font-size: -da-convt-root-ems(20px);
+} 
+
+
+@media screen and (min-width: -da-convt-root-ems(780px)) {
+	
+	.masthead {
+		width: 90%
+	}
+	
+	.main-header {
+		background-color: $orange;
+		background-color: rgba(241, 90, 34, 0.98);
+		border-bottom: 1px solid rgba(0,0,0,0.7);	
+	}
+	
+	.main-title {
+		
+		text-align: left;
+		background-color: transparent;
+		padding: 0;
+		
+		> a {
+		
+			padding-left: 0;
+			
+		}
+	}
+}
+
+

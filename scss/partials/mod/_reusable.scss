@@ -1,0 +1,12 @@
+.clr {
+  clear: both;
+}
+
+.clr:after {
+  content: '';
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+

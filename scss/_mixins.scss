@@ -1,0 +1,28 @@
+// #### GENERAL SASS MIXINS ####
+
+@mixin inline-list {
+	
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	
+	> li {
+		display: inline-block;
+		
+		> a {
+			display: block;
+		}
+		
+	}
+	
+	> li:first-child > a {
+		padding-left: 0;
+	}
+	
+}
+
+@mixin accessibly-hide {
+	position: absolute;
+	top: -999em;
+	left: -999em;
+}

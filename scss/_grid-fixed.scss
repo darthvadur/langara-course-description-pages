@@ -1,0 +1,53 @@
+// FIXED GRID
+
+// Grid Settings
+$maxWidthContainer: 960px;  // main website container in px
+$numUnits: 12;            // number of units in grid
+$widthUnit: 58px;           // width of each grid unit in px
+$widthGutter: 24px;         // width of gutter in px
+
+// ---- NO NEED TO EDIT BELOW THIS LINE ----
+
+// Grid Functions
+// Calculate column width in px
+@function -da-calc-col-width($numCol, $widthUnit, $widthGutter) {
+	@return ($numCol * $widthUnit) +  (($numCol - 1) * $widthGutter);	
+}
+
+// Grid Column Output
+// If it's the last grid item in a row, $isLast should be set to true
+@mixin grid-width($numCol, $isLast:false) {
+	
+	@if $numCol <= $numUnits { 
+	
+		float: left;
+	
+		@if $numCol == $numUnits {
+			
+			@if $isLast == false {
+				width: -da-calc-col-width($numCol, $widthUnit, $widthGutter);
+			} 
+
+			@else {
+				width: -da-calc-col-width($numCol, $widthUnit, $widthGutter);
+			}
+			
+		} @else {
+			
+			@if $isLast == false {
+				width: -da-calc-col-width($numCol, $widthUnit, $widthGutter);
+				margin-right: $widthGutter;
+			} 
+
+			@else {
+				width: -da-calc-col-width($numCol, $widthUnit, $widthGutter);
+				margin-right: 0;
+			}
+			
+			
+		}
+
+	}
+
+
+}

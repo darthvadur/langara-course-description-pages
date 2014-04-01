@@ -1,0 +1,181 @@
+/* #### BASE STYLES #### */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font: #{$root-font-size-em}/1.5 $bodyFont;
+	color: $bodyColor;
+	background: $darkGray url(../images/escheresque_ste.png) repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0 0 -da-convt-root-ems(12px);
+	color: #000;
+}
+
+p, ol, ul, blockquote {
+	margin: 0 0 -da-convt-root-ems(24px);
+	max-height: 999999px; /* Remove once Chrome for Android FontBoosting bug fixed */
+}
+
+h1 {
+	font-size: -da-convt-root-ems(24px);
+	line-height: 1;
+	margin: 1em 0;
+}
+
+h2 {
+	font-size: -da-convt-root-ems(24px);
+	line-height: 1;
+	color: $orange;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: -da-convt-root-ems(21px);
+	line-height: -da-convt-line-height(24px, 21px);
+	font-weight: bold;
+	color: #000;
+	
+}
+
+h4 {
+	font-size: -da-convt-root-ems(18px);
+	line-height: -da-convt-line-height(24px, 18px);
+	font-weight: bold;
+}
+
+ul {
+	padding-left: -da-convt-root-ems(18px);
+}
+
+li {
+	margin: -da-convt-root-ems(6px) 0 0;
+}
+
+figure {
+	display: inline-block;
+	margin: 0 -da-convt-root-ems(24px) -da-convt-root-ems(24px) 0;
+}
+
+figure img {
+    display: block;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	border: 1px solid $subtleGray;
+}
+
+figcaption {
+	font-size: -da-convt-root-ems(12px);
+	color: $mediumGray;
+	padding-left: -da-convt-local-ems(18px,12px);
+	position: relative;
+	margin-top: -da-convt-root-ems(12px);
+	max-width: 600px;
+}
+
+figcaption:before {
+	content: '';
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent $lightGray transparent;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+small {
+	font-size: -da-convt-root-ems(14px);
+	line-height: -da-convt-line-height(14px, 12px);
+}	
+
+a {
+	text-decoration: none;
+	color: $orange;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+/* Background flash to indicate selected publication */
+@-webkit-keyframes bg-flash {
+  0% {
+    background: rgba(31, 144, 207, 0);
+  }
+
+  50% {
+    background: rgba(31, 144, 207, 0.25);
+  }
+
+  100% {
+    background: rgba(31, 144, 207, 0);
+  }
+}
+
+@-moz-keyframes bg-flash {
+  0% {
+    background: rgba(31, 144, 207, 0);
+  }
+
+  50% {
+    background: rgba(31, 144, 207, 0.25);
+  }
+
+  100% {
+    background: rgba(31, 144, 207, 0);
+  }
+}
+
+@-o-keyframes bg-flash {
+  0% {
+    background: rgba(31, 144, 207, 0);
+  }
+
+  50% {
+    background: rgba(31, 144, 207, 0.25);
+  }
+
+  100% {
+    background: rgba(31, 144, 207, 0);
+  }
+}
+
+@keyframes bg-flash {
+  0% {
+    background: rgba(31, 144, 207, 0);
+  }
+
+  50% {
+    background: rgba(31, 144, 207, 0.25);
+  }
+
+  100% {
+    background: rgba(31, 144, 207, 0);
+  }
+}
+
+:target {
+  -webkit-animation: bg-flash 3s ease-in-out;
+  -moz-animation: bg-flash 3s ease-in-out;
+  -o-animation: bg-flash 3s ease-in-out;
+  animation: bg-flash 3s ease-in-out;
+}
+
+

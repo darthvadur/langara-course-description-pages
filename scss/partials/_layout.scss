@@ -1,0 +1,50 @@
+/* #### LAYOUT STYLES #### */
+
+/* Main Containers */
+
+.main-container {
+	margin: 0 auto;
+	background: #fff;
+}
+
+
+.content-sections {
+	max-width: $maxWidthContainer;
+	margin: -da-convt-root-ems(24px) auto;
+	width: 90%;
+	min-height: -da-convt-root-ems(350px);
+}
+
+[class^="course-section-"] {
+	margin-bottom: -da-convt-root-ems(36px);
+}
+
+@media screen and (min-width: -da-convt-root-ems(600px)) {
+	
+	.course-section-intro {
+		@include grid-width(8);
+	}
+	
+	.course-section-details {
+		clear: both;
+	}
+
+	.course-section-date {
+		
+		@include grid-width(4, true);
+	}
+
+}
+
+@media screen and (min-width: -da-convt-root-ems(780px)) {
+	
+	.course-section-register {
+		@include grid-width(4, true);
+	}
+	
+	.course-section-instructor {
+		@include grid-width(8);
+	}
+}
+
+

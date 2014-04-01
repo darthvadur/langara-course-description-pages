@@ -1,0 +1,13 @@
+@media screen and (min-width: -da-convt-root-ems(780px)) {
+
+	.course-section-intro {
+	
+		font-size: -da-convt-root-ems(18px);
+		
+		> h2 {
+			@include accessibly-hide;
+		}
+
+	} 	
+	
+}

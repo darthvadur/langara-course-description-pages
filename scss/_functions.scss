@@ -1,0 +1,17 @@
+// #### GENERAL SASS FUNCTIONS ####
+
+// function to covert px values to root ems
+@function -da-convt-root-ems($px) {
+	@return #{$px / $root-font-size-px}em;	
+}
+
+// function to covert px values to local ems
+@function -da-convt-local-ems($tarpx, $local-font-size-px) {
+	@return #{$tarpx / $local-font-size-px}em;	
+}
+
+// function to covert px line-height values to unitless scaling factors
+@function -da-convt-line-height($tarpx, $local-font-size-px) {
+	@return #{$tarpx / $local-font-size-px};
+}
+

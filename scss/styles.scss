@@ -1,0 +1,30 @@
+/* Main Stylesheet for Langara Course Promotional Pages */
+/*  
+* ===== Author: Dave Arthur 
+* ===== Last Updated: April 2013
+*
+*
+*/
+// SASS-related stuff
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+@import 'grid-fluid';
+// Reset styles
+@import 'partials/reset';
+// Fonts 
+@import 'partials/fonts';
+// Website styles start
+@import 'partials/base';
+@import 'partials/layout';
+@import 'partials/mod/reusable';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/mod/main-nav';
+@import 'partials/mod/feature-area';
+@import 'partials/mod/content';
+@import 'partials/mod/intro';
+@import 'partials/mod/topics';
+
+
+

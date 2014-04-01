@@ -1,0 +1,56 @@
+// FLUID GRID
+
+// Grid Settings
+$maxWidthContainer: 960px;  // main website container in px
+$numUnits: 12;            // number of units in grid
+$widthUnit: 58px;           // width of each grid unit in px
+$widthGutter: 24px;         // width of gutter in px
+
+// ---- NO NEED TO EDIT BELOW THIS LINE ----
+
+//Grid Functions
+// Calculate % column width
+@function -da-calc-col-width($numCol, $maxWidth, $widthUnit, $widthGutter) {
+	@return (($numCol * $widthUnit) + (($numCol - 1) * $widthGutter)) / $maxWidth * 100%;	
+}
+
+// Calculate width value which is child of main container
+@function -da-convt-root-perc($px, $maxWidth: $maxWidthContainer) {
+	@return $px / $maxWidth * 100%;	
+}
+
+// Grid Column Output
+// If it's the last grid item in a row, $isLast should be set to true
+@mixin grid-width($numCol, $isLast:false) {
+	
+	@if $numCol <= $numUnits { 
+		
+		float: left;
+
+		@if $numCol == $numUnits {
+	
+			@if $isLast == false {
+				width: -da-calc-col-width($numCol, $maxWidthContainer, $widthUnit, $widthGutter);
+			} 
+
+			@else {
+				width: -da-calc-col-width($numCol, $maxWidthContainer, $widthUnit, $widthGutter);
+			}
+	
+		} @else {
+	
+			@if $isLast == false {
+				width: -da-calc-col-width($numCol, $maxWidthContainer, $widthUnit, $widthGutter);
+				margin-right: -da-convt-root-perc($widthGutter);
+			} 
+
+			@else {
+				width: -da-calc-col-width($numCol, $maxWidthContainer, $widthUnit, $widthGutter);
+				margin-right: 0;
+			}
+	
+		}
+		
+	}
+	
+}

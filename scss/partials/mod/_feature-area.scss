@@ -1,0 +1,76 @@
+.feature {
+	width: 100%;
+	background: $darkGray url(../images/escheresque_ste.png) repeat;
+	border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+.feature-inner {
+	width: 90%;
+	max-width: $maxWidthContainer;
+	margin: 0 auto;
+	padding: -da-convt-root-ems(18px) 0;
+	
+		
+	> h2 {
+		display: inline-block;
+		float: left;
+		margin: 0;
+		color: #fff;
+		font-size: -da-convt-root-ems(16px);
+		line-height: 1.2;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	
+		> b {
+			display: block;
+			font-weight: normal;
+			font-size: 2.14285714285714em;
+			margin-bottom: -da-convt-root-ems(2px);
+		}
+	
+	}
+		
+	> .button-register {
+		background: #eeeeee; /* Old browsers */
+		background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+		color: $darkGray;
+		padding: -da-convt-root-ems(10px);
+		border-radius: 10px;
+		float: right;
+		font-weight: bold;
+		-moz-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+		box-shadow: 0 0 5px rgba(0,0,0,0.7);
+		margin-top: 10px;
+	
+	}
+		
+}		
+	
+
+@media screen and (min-width: -da-convt-root-ems(600px)) {
+	
+	.feature-inner > h2 {
+		
+		line-height: 1.2;
+		@include grid-width(9);
+		font-size: 1.6em;
+
+		> b {
+			display: block;
+			font-weight: normal;
+			font-size: 2.1em;
+		}
+	}
+	
+	.feature-heading > h1 {
+		font-size: 2em;
+		
+		> b {
+			font-size: 2.5em;
+		}
+	}
+}

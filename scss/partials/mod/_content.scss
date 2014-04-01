@@ -1,0 +1,73 @@
+.course-dates {
+	list-style: none;
+	padding-left: 0;
+	
+	> li > strong {
+		width: -da-convt-root-ems(80px);
+		display: inline-block;
+	}
+	
+	> li > .date-details {
+		white-space: nowrap;
+	}
+}
+
+.contact-list {
+
+	list-style: none;
+	padding-left: 0;
+	
+	> li > strong {
+		width: -da-convt-root-ems(120px);
+		display: inline-block;
+		color: $mediumGray;
+	}
+
+	> li > .contact-details {
+		white-space: nowrap;
+	}
+	
+}
+
+
+.profile-photo {
+	float: left;
+	width: 25%;
+}
+
+@media screen and (min-width: -da-convt-root-ems(600px)) {
+	
+	.contact-list > li > strong {
+		width: -da-convt-root-ems(100px);
+	}
+	
+	.profile-additional {
+		font-size: -da-convt-root-ems(14px);
+	}
+
+	.course-section-intro {
+		padding-right: -da-convt-root-ems(23px);
+		border-right: 1px dotted $darkGray;
+	}
+	
+	.profile-connect {
+		@include grid-width(7);
+		clear: both;
+		
+	}
+	
+	.profile-other-courses {
+		@include grid-width(5, true);
+	}
+
+
+}
+
+@media screen and (min-width: -da-convt-root-ems(780px)) {
+
+	.course-section-instructor {
+		padding-right: -da-convt-root-ems(23px);
+		border-right: 1px dotted $darkGray;
+	}
+	
+}
