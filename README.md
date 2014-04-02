@@ -2,7 +2,7 @@
 
 Website: [http://davearthurweb.com/courses/](http://davearthurweb.com/courses/)
 
-I created this website so prospective students could get more information about the courses I teach at [Langara Continuous Studies](http://www.langara.bc.ca/continuing-studies/programs-and-courses/programs/web-technologies/index.html).
+I created this website so prospective students could get more information about the courses I teach at [Langara College Continuous Studies](http://www.langara.bc.ca/continuing-studies/programs-and-courses/programs/web-technologies/index.html).
 
 I currently teach four courses (as of April 2014):
 
