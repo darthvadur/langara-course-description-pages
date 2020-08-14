@@ -10,6 +10,7 @@ I currently teach four courses (as of April 2014):
 2. [CSS3 and Responsive Web Design](http://arbutuscreative.ca/darthvadur/langara-courses/css3/)
 3. [Improving HTML/CSS Development Workflows](http://arbutuscreative.ca/darthvadur/langara-courses/html-css-workflows) 
 4. [HTML5 and Web Applications](http://arbutuscreative.ca/darthvadur/langara-courses/html5/)
+5. WordPress Theme Development
 
 
 
